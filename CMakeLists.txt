@@ -360,7 +360,7 @@ endforeach()
 
 # C examples
 if(PSMOVE_BUILD_EXAMPLES)
-    foreach(EXAMPLE example multiple dump_calibration)
+    foreach(EXAMPLE example multiple multiple_mouse dump_calibration)
         add_executable(${EXAMPLE} examples/c/${EXAMPLE}.c)
         target_link_libraries(${EXAMPLE} psmoveapi)
     endforeach()
